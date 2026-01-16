@@ -107,12 +107,11 @@
 <script>
   const brukernavn = "kontakt";
   const domene = "trysilnærhjelp.no";
-  document.getElementById("email").innerHTML =
-    brukernavn + "&#64;" + domene;
-</script>
-    <p><strong>Område:</strong> Trysil</p>
-</section>
+  const adresse = brukernavn + "@" + domene;
 
+  document.getElementById("email").innerHTML =
+    '<a href="mailto:' + adresse + '">' + adresse + '</a>';
+</script>
 <footer>
     <p>© 2025 Trysil Nærhjelp</p>
 </footer>
